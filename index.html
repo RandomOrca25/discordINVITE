@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Links</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Apply Inter font and basic background */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Full viewport height */
+            margin: 0;
+            padding: 20px; /* Add some padding around the content */
+            box-sizing: border-box; /* Include padding in element's total width and height */
+        }
+        /* Custom styling for image dimensions within buttons */
+        .button-icon {
+            width: 24px; /* Equivalent to w-6 */
+            height: 24px; /* Equivalent to h-6 */
+            margin-right: 12px; /* Equivalent to mr-3 (tailwind's default is 0.75rem = 12px) */
+            object-fit: contain; /* Ensure the entire image is visible, scaling it down if necessary */
+        }
+    </style>
+</head>
+<body>
+    <div class="flex flex-col items-center justify-center p-6 bg-white shadow-lg rounded-xl max-w-md w-full">
+        <h1 class="text-3xl font-extrabold text-gray-800 mb-8 text-center">Join our Communities!</h1>
+
+        <!-- Zapto Discord Link -->
+        <a href="https://discord.gg/invite" target="_blank" rel="noopener noreferrer"
+           class="w-full flex items-center justify-center px-6 py-3 mb-4 text-lg font-semibold text-white bg-indigo-600 rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-75 transition duration-300 ease-in-out">
+            <img src="https://thumbs.dreamstime.com/b/kiev-ukraine-august-minecraft-logo-minecraft-game-kiev-ukraine-august-minecraft-logo-minecraft-game-287265300.jpg?w=2048"
+                 alt="Zapto Discord Logo"
+                 class="button-icon"
+                 onerror="this.onerror=null; this.src='https://placehold.co/24x24/cccccc/333333?text=IMG'">
+            Join Zapto Discord
+        </a>
+
+        <!-- Cbook Community Link -->
+        <a href="https://example.com" target="_blank" rel="noopener noreferrer"
+           class="w-full flex items-center justify-center px-6 py-3 text-lg font-semibold text-white bg-green-600 rounded-lg shadow-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 transition duration-300 ease-in-out">
+            <img src="https://webobjects2.cdw.com/is/image/CDW/7407954?$product-main$"
+                 alt="Cbook Community Logo"
+                 class="button-icon"
+                 onerror="this.onerror=null; this.src='https://placehold.co/24x24/cccccc/333333?text=IMG'">
+            Join Cbook Community
+        </a>
+    </div>
+</body>
+</html>
