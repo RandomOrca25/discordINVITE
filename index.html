@@ -3,60 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community Links</title>
-    <!-- Tailwind CSS CDN for styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Redirecting...</title>
+    <!--
+        Meta refresh tag to redirect after 0 seconds.
+        This is the primary method for auto-redirection.
+    -->
+    <meta http-equiv="refresh" content="0;url=https://discord.gg/HJWwBhxFGn">
     <style>
-        /* Apply Inter font and basic background */
+        /* Apply Tailwind CSS base styles and Inter font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6; /* Light gray background */
+            background-color: #f0f2f5; /* Light gray background */
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh; /* Full viewport height */
+            min-height: 100vh;
             margin: 0;
-            padding: 20px; /* Add some padding around the content */
-            box-sizing: border-box; /* Include padding in element's total width and height */
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            color: #333;
         }
-        /* Custom styling for image dimensions within buttons */
-        .button-icon {
-            width: 24px; /* Equivalent to w-6 */
-            height: 24px; /* Equivalent to h-6 */
-            margin-right: 12px; /* Equivalent to mr-3 (tailwind's default is 0.75rem = 12px) */
-            object-fit: contain; /* Ensure the entire image is visible, scaling it down if necessary */
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+        h1 {
+            color: #1a202c;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        a {
+            color: #3b82f6; /* Blue link color */
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #2563eb; /* Darker blue on hover */
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="flex flex-col items-center justify-center p-6 bg-white shadow-lg rounded-xl max-w-md w-full">
-        <h1 class="text-3xl font-extrabold text-gray-800 mb-8 text-center">Join Our Communities!</h1>
-
-        <!-- Zapto Discord Link -->
-        <a href="https://discord.gg/HJWwBhxFGn" target="_blank" rel="noopener noreferrer"
-           class="w-full flex items-center justify-center px-6 py-3 mb-4 text-lg font-semibold text-white bg-indigo-600 rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-75 transition duration-300 ease-in-out">
-            <img src="https://github.com/RandomOrca25/discordINVITE/blob/main/Screenshot%202025-04-15%20162827.png?raw=true"
-                 alt="Zapto Discord Logo"
-                 class="button-icon"
-                 onerror="this.onerror=null; this.src='https://placehold.co/24x24/cccccc/333333?text=IMG'">
-            Join Zapto Discord
-        </a>
-
-        <!-- Cbook Community Link -->
-        <a href="https://discord.gg/cvD7yvpYKb" target="_blank" rel="noopener noreferrer"
-           class="w-full flex items-center justify-center px-6 py-3 text-lg font-semibold text-white bg-green-600 rounded-lg shadow-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 transition duration-300 ease-in-out">
-            <img src="https://webobjects2.cdw.com/is/image/CDW/7407954?$product-main$"
-                 alt="Cbook Community Logo"
-                 class="button-icon"
-                 onerror="this.onerror=null; this.src='https://placehold.co/24x24/cccccc/333333?text=IMG'">
-            Join Cbook Community
-        </a>
-
-        <!-- View Zapto Status Link -->
-        <a href="https://ranks.zapto.org" target="_blank" rel="noopener noreferrer"
-           class="w-full flex items-center justify-center px-6 py-3 mt-4 text-lg font-semibold text-blue-600 border border-blue-600 rounded-lg shadow-md hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 transition duration-300 ease-in-out">
-            View Zapto Status
-        </a>
+    <div class="container">
+        <h1>Redirecting you...</h1>
+        <p>
+            If you are not redirected automatically, please
+            <a href="https://discord.gg/HJWwBhxFGn">click here to proceed to the Discord server</a>.
+        </p>
     </div>
+
+    <script>
+        // JavaScript fallback for redirection.
+        // This ensures redirection even if the meta refresh fails.
+        window.onload = function() {
+            setTimeout(function() {
+                window.location.href = 'https://discord.gg/HJWwBhxFGn';
+            }, 100); // Small delay to allow meta refresh to take precedence if present
+        };
+    </script>
 </body>
 </html>
